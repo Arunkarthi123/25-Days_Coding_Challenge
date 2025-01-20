@@ -6,31 +6,27 @@
 //    6 7 8
 //    4 5
 //    3
-
-
-
-class Pattern2
+class Pattern2 
 {
     public static void main(String[] args) 
     {
-        int n = 4,x=3;
-        for(int i = 1;i<=n;i++)
-        {
-            for(int j=n-i;j<n;j++)
+		int i,j;
+		int k =3 , n =4;
+		for(i=1;i<=n;i++) {
+			for(j=1;j<=i;j++) {
+				System.out.print(k++ +" ");
+			}	
+			System.out.println();
+		}
+		k = k-(n-1);
+		for(i=n ; i>1;i--) 
+        {		
+			for(j=i ; j>1; j--)		
             {
-                System.out.print(x++ +" ");
-            }
-            System.out.println();
-        }
-        x=x-n+1;
-        for(int i=1;i<n;i++)
-        {
-            x=x-n;
-            for(int j=i;j<n;j++)
-            {
-                System.out.print(x++ +" ");
-            }
-            System.out.println();
-        }
+				System.out.print(k-j + " ");
+			}
+			k = k-i+1;
+			System.out.println();
+	    }
     }
 }
