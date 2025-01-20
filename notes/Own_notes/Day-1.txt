@@ -49,6 +49,6 @@ Execution :
     ## constructor
         - constructor do not have any return value .
         - It invoked during the object creation itself .
-        - 
+        - If there is no constructor and once object is created then default constructor is created automatically by the compiler . 
     
     ## 

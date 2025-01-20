@@ -17,7 +17,7 @@ public class Student
     {
         Student s1 = new Student("Arun",100,77);
         s1.display();
-        Student s2 = new Student("Dhandu",95,309);
+        Student s2 = new Student("Dhandam",95,309);
         s2.display();
     }
 

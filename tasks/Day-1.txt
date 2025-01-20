@@ -1,4 +1,64 @@
+Search :
+-------------
+
 1. Explore about the app which is purely developed by python .
 2. Resume Building .
 3. Develop Self Introduction .
-4. 
+
+Practice:
+---------
+
+Pattern:
+--------
+
+1) 3
+   4 5
+   6 7 8
+   9 10 11 12
+
+2) 3
+   4 5
+   6 7 8
+   9 10 11 12
+   6 7 8
+   4 5
+   3
+
+3) ****
+   ****
+   ****
+   ****
+
+4) ****
+   *  *
+   *  *
+   ****
+
+Java Question:
+--------------
+
+1) You are tasked with building a simple library system using the Book class. Complete the following steps:
+The Book class contains the following public attributes: title (String),author (String) and price (double). It also has a method displayBookDetails() that prints the details of a book
+In the Library class create two Book objects:
+The first book titled "The Secret", authored by "Banu", with a price of 350.
+The second book titled "Atomic Habits", authored by "James", with a price of 300.
+Display the details of both books using the displayBookDetails() method.
+Output:
+Title: The Secret, Author: Banu, Price: 350.0
+Title: Atomic Habits, Author: James, Price: 300.0
+
+2) You are tasked with building a simple library system using the Book class. Complete the following steps:
+The Book class contains the following private attributes: title (String),author (String) and price (double). It also has a method displayBookDetails() that prints the details of a book
+In the Library class create two Book objects (Use constuctor):
+The first book titled "The Secret", authored by "Banu", with a price of 350.
+The second book titled "Atomic Habits", authored by "James", with a price of 300.
+Display the details of both books using the displayBookDetails() method. 
+Apply a 15% discount to the second book (book2) using the getDiscountedPrice method. Display the updated details of the second book after applying the discount. 
+Output:
+Title: The Secret, Author: Banu, Price: 350.0
+Title: Atomic Habits, Author: James, Price: 300.0
+Discounted Price
+Title: Atomic Habits, Author: James, Price: 255.0
+
+3) Solve question 2 using getter and setter.
+

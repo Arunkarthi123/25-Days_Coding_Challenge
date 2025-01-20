@@ -1,0 +1,271 @@
+Content:
+--------
+
+Class and obj
+Constructor
+Access specifiers
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Class and Obj:
+--------------
+
+package src;
+
+public class Student{
+	public static void main(String args[])
+	{
+		StudDetail s1=new StudDetail();//object creation
+		StudDetail s2=new StudDetail();
+		//value allocation
+		s1.name="Banu";
+		s1.rollnum=123;
+		s1.mark=100;
+		s2.rollnum=124;
+		System.out.println(s2.name);
+	}
+}
+
+class StudDetail
+{
+	public String name;
+	public int rollnum;
+	public int mark;
+	void display()
+	{
+		System.out.println(name+" "+rollnum+" "+mark);
+	}
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Constructor:
+------------
+Private attributes: 
+	* to set values for access private attr-> constructors / setter
+
+public class Student{
+	public static void main(String args[])
+	{
+		StudDetail s1=new StudDetail();
+		StudDetail s2=new StudDetail();
+		//value allocation
+		s1.name="Banu";
+		s1.rollnum=123;
+		s1.mark=100;
+		s2.rollnum=124;
+		System.out.println(s1.name);
+		System.out.println(s2.name);
+	}
+}
+
+class StudDetail
+{
+	private String name;
+	private int rollnum;
+	private int mark;
+	void display()
+	{
+		System.out.println(name+" "+rollnum+" "+mark);
+	}
+}
+
+Output: error (Private attributes cannot access outside the class)
+
+How to write default costructor:
+--------------------------------
+* setting default values
+
+
+Syntax:
+public classname() 
+{
+
+}
+
+Eg: 
+
+package src;
+
+public class Student{
+	public static void main(String args[])
+	{
+		StudDetail s1=new StudDetail();
+		StudDetail s2=new StudDetail();
+		s1.display();
+		s2.display();
+	}
+}
+
+class StudDetail
+{
+	private String name;
+	private int rollnum;
+	private int mark;
+	public StudDetail()
+	{
+		name="ABC";
+		rollnum=100;
+		mark=50;
+	}
+	void display()
+	{
+		System.out.println(name+" "+rollnum+" "+mark);
+	}
+}
+
+Output:
+
+ABC 100 50
+ABC 100 50
+
+Parameterized Constructor:
+--------------------------
+ 
+* Passing arguments to the constr
+
+Eg:
+
+package src;
+
+public class Student{
+	public static void main(String args[])
+	{
+		StudDetail s1=new StudDetail("Banu",12,100);
+		StudDetail s2=new StudDetail("Harini",13,97);
+		s1.display();
+		s2.display();
+	}
+}
+
+class StudDetail
+{
+	private String name;
+	private int rollnum;
+	private int mark;
+	public StudDetail(String name,int rollnum,int mark)//Para constructor
+	{
+		this.name=name;
+		this.rollnum=rollnum;
+		this.mark=mark;
+	}
+	void display()
+	{
+		System.out.println(name+" "+rollnum+" "+mark);
+	}
+}
+
+
+Accessing Private attributes using getter/ setter (Encapsulation):
+
+package src;
+
+public class Student{
+	public static void main(String args[])
+	{
+		StudDetail s1=new StudDetail();
+		StudDetail s2=new StudDetail();
+		s1.setName("Banu");//to assign value for name attr
+		System.out.println(s1.getName());// get: return the respective value
+		s1.setRollNum(12);
+		System.out.println(s1.getRollNum());
+	}
+}
+
+class StudDetail
+{
+	private String name;
+	private int rollnum;
+	private int Mark;
+	void setName(String name)
+	{
+		this.name=name;
+	}	
+	String getName() {
+		return this.name;
+	}
+	void setRollNum(int rollnum)
+	{
+		this.rollnum=rollnum;
+	}
+	int getRollNum() {
+		return this.rollnum;
+	}	
+	int getMark() {
+		return this.mark;
+	}
+	void display()
+	{
+		System.out.println(name+" "+rollnum+" "+mark);
+	}
+}
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Practice:
+---------
+
+Pattern:
+--------
+
+1) 3
+   4 5
+   6 7 8
+   9 10 11 12
+
+2) 3
+   4 5
+   6 7 8
+   9 10 11 12
+   6 7 8
+   4 5
+   3
+
+3) ****
+   ****
+   ****
+   ****
+
+4) ****
+   *  *
+   *  *
+   ****
+
+Java Question:
+--------------
+
+1) You are tasked with building a simple library system using the Book class. Complete the following steps:
+The Book class contains the following public attributes: title (String),author (String) and price (double). It also has a method displayBookDetails() that prints the details of a book
+In the Library class create two Book objects:
+The first book titled "The Secret", authored by "Banu", with a price of 350.
+The second book titled "Atomic Habits", authored by "James", with a price of 300.
+Display the details of both books using the displayBookDetails() method.
+Output:
+Title: The Secret, Author: Banu, Price: 350.0
+Title: Atomic Habits, Author: James, Price: 300.0
+
+2) You are tasked with building a simple library system using the Book class. Complete the following steps:
+The Book class contains the following private attributes: title (String),author (String) and price (double). It also has a method displayBookDetails() that prints the details of a book
+In the Library class create two Book objects (Use constuctor):
+The first book titled "The Secret", authored by "Banu", with a price of 350.
+The second book titled "Atomic Habits", authored by "James", with a price of 300.
+Display the details of both books using the displayBookDetails() method. 
+Apply a 15% discount to the second book (book2) using the getDiscountedPrice method. Display the updated details of the second book after applying the discount. 
+Output:
+Title: The Secret, Author: Banu, Price: 350.0
+Title: Atomic Habits, Author: James, Price: 300.0
+Discounted Price
+Title: Atomic Habits, Author: James, Price: 255.0
+
+3) Solve question 2 using getter and setter.
+
+
+
+
+
+
+
+
+
+
