@@ -1,0 +1,10 @@
+Day-1 (20-jan-2025)
+
+Problem solving skill - pattern , array , strings problems .
+DSA theory : 
+    - mycode school //youtube
+    - Take u forward (optimal solution)
+    - LogicFirstTamil - Tamil content
+    - Neetcode - to solve leetcode solutions
+    - knual kushwaka 
+    
