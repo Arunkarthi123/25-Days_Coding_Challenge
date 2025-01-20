@@ -32,6 +32,6 @@ class Book
     }
     void displayBookDetails()
     {
-        System.err.println("Title: "+title+" , Author: "+author+" , Price: "+price);
+        System.out.println("Title: "+title+" , Author: "+author+" , Price: "+price);
     }
 }
