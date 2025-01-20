@@ -8,3 +8,45 @@ DSA theory :
     - Neetcode - to solve leetcode solutions
     - knual kushwaka 
     
+
+compliation flow :
+    java code -->compiler --> byte code
+    (simple.java)             (simple.class)
+
+        byte code is in unreadable format
+
+Example :
+        class Simple
+        {
+            public static void main(String args[])
+            {
+                System.out.println("Hello world");
+            }
+        }
+
+        - static is a keyword which is used to access a method without using a object
+        - main is the start of the program
+        - in java {} used to represent the block of the code
+        - class name can start with lowercase but it is a Stardard to start with uppercase . It will not give any error in starting with lowercase .
+        - we can rearrange `public ` and `static` it will not give any error but `void` and `main` should not change its order .
+        - args can be renamed by any names .
+        - 
+
+compliation:
+    to compile a java file use ```javac filename.java ```
+Execution :
+    to execute / run a java file use ```java classname ```
+
+# OOPS concept:
+    ## object
+        - To create an object
+            classname obj_name = new classname();
+                classname() - constructor call
+        - Memory of the class was created only during object creation .
+        - object holds the base address of the object .
+            Eg. if s1 is the object name then s1 holds the base address of the s1 object .
+        - If any attributes are declared as private then it can be accessed using constructor or getter & setter .
+    ## constructor
+        - constructor do not have any return value .
+        - It invoked during the object creation itself .
+        - 
