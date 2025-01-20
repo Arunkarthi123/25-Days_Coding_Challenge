@@ -7,6 +7,8 @@
 //    4 5
 //    3
 
+
+
 class Pattern2
 {
     public static void main(String[] args) 
