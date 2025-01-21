@@ -17,5 +17,5 @@ class Mcet
 }
 class Cse extends Mcet
 {
-    int num=10;
+    double num=10;
 }

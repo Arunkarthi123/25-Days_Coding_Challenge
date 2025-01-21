@@ -2,7 +2,50 @@ Day-2 (21-jan-2025)
 
 ## Inheritance :
     - Syntax : class SubClassName extends SuperClassName
+    - Types:
+        - Single Inheritance .
+        - Hierarchical Inheritance .
+        - Multi-Level Inheritance .
+        - Hybrid Inheritance .
+        
+    - Base class(parent) always contains less attribute than derived (child) class .
     - Child class inherits the property of parent class but parent class does not have the property of child class . 
+    - ## Constructor excution in Inheritance :
+        - Compiler 1 st excute the Constructor of very base class and its derived classes .
+        - Eg :
+
+            class Base 
+            {
+
+                Base()
+                {
+                    System.out.println("Base Class Constructor Called ");
+                }
+            }
+
+            class Derived extends Base {
+                Derived()
+                {
+
+                    System.out.println("Derived Class Constructor Called ");
+                }
+            }
+
+            class Inheritance3 {
+
+                public static void main(String[] args)
+                {
+                    Derived d = new Derived();
+
+                    // Note: Here first super class constructor will be
+                    // called there after derived(sub class) constructor
+                    // will be called
+                }
+            }
+
+
+    - ## Function over-ride :
+        - when there is two attributes in both parent and child class then the attribute gets over-ridden .
     - Eg :
         class Emp
         {
@@ -16,5 +59,16 @@ Day-2 (21-jan-2025)
                 System.out.println(p.salary);
             }
         }
+## Overriding :
+    - anatation - @Override
+    - In Java, overriding is a feature that allows a subclass to provide a specific implementation of a method that is already provided by its superclass
+    - Commonly said as rewriting the existing code of super class in sub class .
+    - Same arguments and same data type and same method name
+    - It only occurs in Inheritance
+    - during runtime .
+## Overloading :
+    - Same method name but different num. of arguments or data type .
+    - during compile time .
+
 
 
