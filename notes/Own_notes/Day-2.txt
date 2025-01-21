@@ -1,0 +1,20 @@
+Day-2 (21-jan-2025)
+
+## Inheritance :
+    - Syntax : class SubClassName extends SuperClassName
+    - Child class inherits the property of parent class but parent class does not have the property of child class . 
+    - Eg :
+        class Emp
+        {
+            int Salary=1000;
+        }
+        public class Programmer extends Emp
+        {
+            public static void main(String args[])
+            {
+                Programmer p = new Programmer();
+                System.out.println(p.salary);
+            }
+        }
+
+
