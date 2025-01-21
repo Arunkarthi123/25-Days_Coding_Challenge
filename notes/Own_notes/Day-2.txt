@@ -44,6 +44,7 @@ Day-2 (21-jan-2025)
             }
 
 
+
     - ## Function over-ride :
         - when there is two attributes in both parent and child class then the attribute gets over-ridden .
     - Eg :
@@ -69,6 +70,10 @@ Day-2 (21-jan-2025)
 ## Overloading :
     - Same method name but different num. of arguments or data type .
     - during compile time .
-
+## super keyword :
+    - super keyword is used to get the data and attributes of parent classes .
+## Abstract :
+    - If a parent class wanted to insists its child class to have some method compulsoryly then abstract is used . 
+    - 
 
 
