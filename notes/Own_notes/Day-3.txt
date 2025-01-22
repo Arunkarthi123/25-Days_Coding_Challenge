@@ -1,0 +1,24 @@
+# Constructors :
+    - Constructors are called during object creation .
+    - Constructors are used to allocate memory for the attributes .
+    - Constructors are used access protected attributes .
+# Abstraction
+    - Syntax abstract class ClassName{}
+    - The method in the abstract class which is not abstract method then it is called Concrete method . 
+    - abstract method is mandatoy to implement in sub class .
+    - abstract class can contain Constructors .
+    - object cannot be created for abstract class .
+    - 
+# Overriding :
+    - toString is an inbulid method .
+    - It is run-time polymorphism .
+
+# Overloading :
+    - It is compile-time polymorphism .
+
+# Multiple Inheritance :
+    - This is not supported in java because 
+# Interface :
+    - Before java 8 ,  Interface contains only abstract method whereas in abstract class it can have both abstract and concreate method .
+    - After java 8 , Interface contains abstract method , default method  and satic Method  .
+    - 
