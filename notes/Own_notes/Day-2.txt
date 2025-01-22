@@ -75,5 +75,7 @@ Day-2 (21-jan-2025)
 ## Abstract :
     - If a parent class wanted to insists its child class to have some method compulsoryly then abstract is used . 
     - 
+## Advantage of using bitwise operator :
+    - usage of bitwise operator reduces time complexity .
 
 
