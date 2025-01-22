@@ -1,0 +1,27 @@
+# Inheritance 
+        Inheritance is the fundamental concept of OOPs that allows one class (child or subclass) 
+    to acqurie the properties of the another class(parent or super class) . 
+        It promotes code reuse and help establish a heirarchical relationship between classes .
+
+# Key Concepts of Inheritance:
+        Parent Class (Superclass): The class whose properties and methods are inherited.
+        Child Class (Subclass): The class that inherits from the parent class.
+        Reusability: The child class can use methods and properties of the parent class without redefining them.
+        Method Overriding: The child class can redefine or modify methods from the parent class.
+
+# Types of Inheritance:
+        Single Inheritance: One child inherits from one parent.
+        Multiple Inheritance: One child inherits from multiple parents (supported in Python but not in Java).
+        Multilevel Inheritance: A child inherits from a parent, which in turn inherits from another parent.
+        Hierarchical Inheritance: Multiple children inherit from one parent.
+        Hybrid Inheritance: A combination of the above.
+
+# Advantages of Inheritance:
+        - Code Reusability: Common functionality can be written once in the parent class and reused by child classes.
+        - Modularity: Makes code easier to understand, maintain, and extend.
+        - Extensibility: Child classes can add their unique features while still using parent class methods.
+
+# Key Points to Remember:
+        - A child class cannot inherit the private members of a parent class directly but can access them via getters or setters.
+        - Constructors of the parent class are not inherited but can be invoked using super() in most languages.
+        - Overriding allows child classes to modify the parent class's behavior, but this requires careful design to avoid unintended side effects.
