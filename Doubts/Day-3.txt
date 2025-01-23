@@ -1,0 +1,6 @@
+1. Why java 8 loose its ristriction to its interface ?
+2. complexity of bulid in method toconvert int to string in java
+3. What if the static method is called using object . eg obj.staticmethod();
+4. how to use static method for different objects . For example if there is an static method called drive in car class then how to use the method for different objects .
+5. What is the difference in directly accessing the attributes and accessing them using get and set methods ?
+6. 

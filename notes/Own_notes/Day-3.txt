@@ -15,10 +15,16 @@
 
 # Overloading :
     - It is compile-time polymorphism .
+    - # final
+        - If final keyword is used for an method or attribute then that cannot override .
 
 # Multiple Inheritance :
     - This is not supported in java because 
 # Interface :
     - Before java 8 ,  Interface contains only abstract method whereas in abstract class it can have both abstract and concreate method .
     - After java 8 , Interface contains abstract method , default method  and satic Method  .
+    - Object cannot be created for Interface .
     - 
+    -# Upcasting :
+        - Making the derieved the class object to refer the base class .
+        - 
