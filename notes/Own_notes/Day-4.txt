@@ -1,0 +1,16 @@
+23-jan-2025
+
+# Exception handling :
+    - If a problem is handled then such problems are Exception . 
+    - If the problem is not handled then it is error .
+    - syntax:
+        try{}
+        catch(typeofException obj){}
+        finally{}
+    - The code below the exception in try block will not be exceuted . Because the compiler after the handling the exception will not return to try block .
+    - Code line in between the try and catch block is not permitted . 
+    - If we know the name of the exception then can handle using specific handling .
+    - If name of the exception is not known then can use the class " Exception " which is the parent of all other exception classes .
+    - We can declare more than one catch block for single try block .
+    - catch or like if statements that check one by one catch blocks if any satisfied then the following catch blocks are ignored .
+    - In nested try block , if the inner try fails in handling exception then outer try tries to handle it.

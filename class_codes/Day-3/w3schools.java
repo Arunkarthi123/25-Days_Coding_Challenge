@@ -1,4 +1,4 @@
-public class Main {
+public class w3schools {
   // Static method
   static void myStaticMethod() {
     System.out.println("Static methods can be called without creating objects");
@@ -13,7 +13,7 @@ public class Main {
   public static void main(String[] args) {
     myStaticMethod(); // Call the static method
 
-    Main myObj = new Main(); // Create an object of MyClass
+    w3schools myObj = new w3schools(); // Create an object of MyClass
     myObj.myPublicMethod();
         myObj.myStaticMethod(); // Call the public method
 // Call the public method
