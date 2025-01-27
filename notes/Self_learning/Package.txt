@@ -1,0 +1,8 @@
+25-jan-2025
+
+- import Java.util.* and java.util Scanner have same space complexity .
+- It is not mandatory to import package to use a  class in the package . Instead we can call in code line by specifying the package each of the time .
+- # Static import syntax :
+    - import Static java.lang.Math.sqrt;
+    - It is introduced in java SE 5.0 .
+     

@@ -1,0 +1,20 @@
+# 27 jan 2025
+
+# Queue :
+    - Queue is an interface in java cannot implement directly .
+    - Queue implementation :
+        - java.util.Queue package . 
+        - Queue<Type> obj = new LinkedList<>();
+        - Queue<Type> obj = new ArrayDeqeue<>();
+        - Queue<Type> obj = new PriorityQueue<>();
+    - Methods :
+        - add()  --> Used to insert elements in Queue . If the task is not successful then  it throws exception . 
+        - offer() --> same as add() but it not throw exception instead it return false .
+        - element() --> Returns the head of the Queue and throws exception if the Queue is empty .
+        - peek() --> same as element() but instead of exception it returns null .
+        - remove() --> used to remove element from Queue and throws exception if the Queue is empty .
+        - poll() --> same as remove() but it not throw exception instead it returns null .
+        - addFirst()
+        - addLast()
+        - push()
+        - removeLast()

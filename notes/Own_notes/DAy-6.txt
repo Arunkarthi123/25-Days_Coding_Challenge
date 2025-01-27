@@ -1,0 +1,17 @@
+1. Why we convert infix to post-fix operation .
+2. # Stack
+        - It follows Last In First out principle .
+        - Insertion and deletion takes place in same end .
+        - # Functions :
+            - push() is used to insert the element in stack .
+            - pop() is used to remove element from the stack .
+            - peek() is used to get the topmost element .
+        - # Condition to check :
+            - Over flow : is verified in static allocation if the stack is full during push() .
+            - Under flow : is verified in both static an dynamic allocation for if the stack is empty during pop() .
+        - # Syntax :
+            - Stack<Type> obj = new Stack<>();
+            - to push : obj.push(element)
+            - to pop : obj.pop()
+            - to peek : obj.peek()
+            

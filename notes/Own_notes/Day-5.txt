@@ -1,0 +1,14 @@
+24 - jan - 2024
+
+# Multithread :
+    - # Synchronized :
+        - If we want to set priority for a method then use synchronized keyword before method name . 
+        - Syntax :
+            synchronized void methodName(){}
+        - Only one thread can access a block of code .
+    - wait / notify : used for inter - thread communication . allow thread to pause and resume based on certain condition .
+    - join() method is used to wait for the completion of the thread .
+    - 
+# Java Collection :
+    - in Arraylist remove will  overload .
+    - 

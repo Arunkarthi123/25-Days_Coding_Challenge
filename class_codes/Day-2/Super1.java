@@ -21,7 +21,7 @@ class Son extends Father
     int age;
     String favfood;
     String occupation;
-    void setDetails(String name,int age,String favfood,String occ)
+    void setDetails(String name,int age,String favfood,String occ) // modifier method 
     {
         this.name = name;
         this.age = age;
@@ -43,7 +43,7 @@ class Son extends Father
         System.out.println("Favourite : "+this.favfood);
         System.out.println("Occupation : "+this.occupation);
     }
-    void getFatherDetails()
+    void getFatherDetails() //Accessor method 
     {
         super.getDetails();
     }
