@@ -18,3 +18,28 @@
         - addLast()
         - push()
         - removeLast()
+# PriorityQueue :
+    - By default PriorityQueue follows Min-heap .
+    - It maintains Insertion order but it does not follow deletion order .
+    - PriorityQueue
+        - To convert into max-heap (largest element at the root) use comparator
+            import java.util. PriorityQueue;
+            public class queue {
+            public static void main(String[] args) {
+            PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->b-a);
+            pq.offer(10);
+            pq.offer(20);
+            pq.offer(5);
+            pq.offer(30);
+            System.out.println(pq);
+            while (!pq.isEmpty()) {
+            System.out.println(pq.po11());
+    - task :
+        You are tasked with implementing a task scheduler for managing and executing tasks based on their priority. The
+                                                                                                                                                                                                                                                                                                                                                                                    tasks are represented as objects of a class Task with the following properties:
+                                                                                                                                                                                                                                                                                                                                                                                    name: A string representing the name of the task.
+                                                                                                                                                                                                                                                                                                                                                                                    priority: An integer representing the priority of the task (higher number = higher priority).
+                                                                                                                                                                                                                                                                                                                                                                                    You will use a priority queue to determine the execution order of tasks. The queue must execute tasks in
+                                                                                                                                                                                                                                                                                                                                                                                    descending order of priority. If two tasks have the same priority, their relative order does not matter.
+                                                                                                                                                                                                                                                                                                                                                                                    Implement the following steps:
+                                                                                                                                                                                                                                                                                                                                                                                    1.Create a Task class to represent

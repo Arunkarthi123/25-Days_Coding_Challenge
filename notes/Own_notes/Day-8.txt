@@ -1,0 +1,74 @@
+# 28 jan 2025
+
+# Today's topic :
+    - Map , regex , 
+# Map :
+    - Map does not implements collection interface .
+    - implements map .
+    - # HashMap 
+        - Unordered , allows only one null key .
+    - # LinkedHashMap:
+        - Maintains insertion order .
+        - Slightly slower than HashMAp .
+    - # TreeMap :
+        - Maintains sorted key .
+        - 
+    - Common Methods :
+        - put(key , value) - returns null if key not present . if the key presents in the map then it updates the value and return old value .
+        - get(key)
+        - remove(key)
+        - contains(key)
+        - containsValue(value)
+        - keySet()
+        - values() - returns a collection of all values .
+        - entryset() - returns set of key-value mappings .
+    #Iterating Map :
+        - Two methods :
+            * entrySet() 
+            * keySet()
+    
+    # Map Entry Method:
+        public static void main(String[) args) {
+        HashMap mp=new HashMap();
+        mp.put("sandwhich",50); mp.put("Salad",80); mp.put("Pizza", ,120); mp.put("Wedges",60);
+        System.out.println(mp);
+        Set entries=mp.entrySet(); //Entry Methods
+        Iterator itr ==entries.iterator();
+        while(itr.hasNext)) } (
+                Map.Entry mentry=(Map.Entry) itr.next
+                if(mentry.getKey().equals("Sandwhich".
+                            mentry.setValue(70);
+                if(mentry.getValue().equals(120))(
+                            mentry.setValue(140);
+                Integer val = ( ((Integer)mentry.getValue())+20;
+                mentry.setValue(val);
+                )
+        System.out.println(mp);
+                                                    100%
+                                                                        +
+
+
+# Iterator :
+    - Syntax : Iterator iterate_value = Vector.iterator();
+    - Purpose : If the dataype of the collection is not known .'
+    - 
+# Input :
+    - If we want to get known number of input use hasNext() method .
+    - 
+# Regex :
+    - Pattern Matching .(from perl)
+    -  Regular Expression(regex) is a sequence of characters that defines a search pattern .
+    - Application :
+        - Chatbot .
+        - Compiler syntax checking . 
+        - Extrating data from text .
+        - Text processing .
+
+    - Package : import java.util.regex.*;
+    - Methods :
+            Pattern p = new Pattern.compile("a*b");
+            Matcher m = p.matcher("aaaaab");
+            boolean b = m.matches();
+        - Pattern - specifies waht kind of pattern needed . 
+        - Matcher - it checks the pattern in the text and if there is no match in text then it throws exception .
+        - 
