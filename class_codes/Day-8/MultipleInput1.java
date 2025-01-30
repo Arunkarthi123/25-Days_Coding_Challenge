@@ -14,4 +14,5 @@ public class MultipleInput1
 
         scanner.close();
     }
+    
 }

@@ -1,0 +1,14 @@
+29-jan-2025 
+
+# JDBC :
+    - # DB creation :
+        - create Database Database_name;
+    - # Table creation :
+        - create table table_name;
+    - # Update Table :
+        - UPDATE table_name SET col_name = value WHERE condition .
+    - # Delete :
+        - DELETE FROM table_name WHERE condition
+    - # Display :
+        - SELECT   * FROM table_name
+    

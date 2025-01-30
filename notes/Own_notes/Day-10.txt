@@ -1,0 +1,29 @@
+30 - jan - 2025 
+
+# Connection establishment :
+    - using forname :
+
+# Statement :
+
+
+# Create table :
+    - Estbalish Connection .
+
+
+
+# Streams :
+    - It will not modify any original data .
+    - It is just a tool for opertions .
+    - It is immutable .
+    - Operations do not modify original data but return a new Stream with result .
+    - 
+
+
+
+
+
+
+
+
+
+    

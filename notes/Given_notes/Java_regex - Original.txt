@@ -1,0 +1,529 @@
+Regex: 
+* pattern matching (from Perl)
+* Regular Expression (Regex) is a sequence of characters that defines a search pattern
+
+eg: 
+
+Sentence : kundhavai looks gorgeous in ponniyin selvan
+
+Find : selvan
+
+* Application: 
+--------------
+	Chatbot 
+	Compiler syntax checking
+	Validating input (e.g., email, phone numbers).
+	Extracting data from text.
+	Search and replace operations.
+	Text processing.
+In java:
+-------
+import java.util.regex - API/Package
+
+Regex class contains 3 methods:
+1) Pattern - which pattern you want i.e compiled representation (Java understandable form)
+           - pattern class constructor is private so we cannot create object
+           - So we can pass pattern inside compile method
+           - i.e Pattern p=new Pattern.compile("Happy");
+           
+2) Matcher - checks pattern in the sentence
+3) PatternSyntaxException - handles pattern exception i.e if Uppercase missed in pswd.
+
+Eg:
+
+import java.util.regex.*;
+class main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java.. come lets start Regex";
+		//Pattern p=new Pattern() - creates error bcz pattern class constructors are private
+		Pattern p=Pattern.compile("come");//prepare compiled representation
+		Matcher m=p.matcher(sentence);
+//		System.out.println(p);
+//		System.out.println(m);
+		while(m.find())
+		{-
+			//System.out.println(m);
+			System.out.println(m.group()+m.start()+" "+m.end());
+		}
+	}
+}
+
+Character class:
+----------------
+
+To find start,end,letter in sentence etc.
+
+
+Basic Regex Syntax:
+------------------
+
+eg: . => a*      alc  acb a*vb
+
+
+-------------------------------.------------------------------------------
+Pattern	   |	Description		  |		Example	     	|
+-------------------------------------------------------------------------
+.	   |	Any character		  |	a.c matches abc		> 
+*	   | 	0 or more repetitions	  |	ab* matches a, abb	|	
++	   |	1 or more repetitions	  |	ab+ matches ab, abb	|
+?	   |	0 or 1 occurrence	  |	ab? matches a, ab	|	
+[abc]	   |	Any of a, b, or c	  |	[a-c] matches a, b, c	|
+^	   |	Starts with		  |	^abc matches abc only	|	
+$	   |	Ends with		  |	xyz$ matches abcxyz	|
+-------------------------------------------------------------------------
+
+To find start: 
+--------------
+
+use ^ symbol in the pattern
+eg: ^SKCET
+
+import java.util.regex.*;
+class main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java.. come lets start Regex";
+		Pattern p=Pattern.compile("^Welcome");// to find start
+		Matcher m=p.matcher(sentence);
+		while(m.find())
+		{
+			
+			System.out.println(m.group());
+		}
+	}
+}
+
+To find end:
+------------
+
+use $ in the pattern.
+
+eg: SKCET$
+
+import java.util.regex.*;
+class main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java.. come lets start Regex";
+		Pattern p=Pattern.compile("Regex$");// to find start
+		Matcher m=p.matcher(sentence);
+		while(m.find())
+		{			
+			System.out.println(m.group());
+		}
+	}
+}
+
+To find two char:
+-----------------
+Use | inbetween char
+
+Eg: S|K
+
+Eg: 
+
+import java.util.regex.*;
+public class Main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java.. come c&m lets start Regex";
+		Pattern p=Pattern.compile("a|e|i|o|u");// to find start
+		Matcher m=p.matcher(sentence);
+		while(m.find())
+		{
+			System.out.println(m.group()+" "+m.start()+" "+m.end());
+		}
+	}
+}
+
+
+
+ 
+
+To find any char is present:
+----------------------------
+
+Use [] in the pattern
+
+Eg: [SKCET] // Either S,K,C,E,T
+
+import java.util.regex.*;
+class main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java.. come lets start Regex";
+		Pattern p=Pattern.compile("[WIR]");// to find start
+		Matcher m=p.matcher(sentence);
+		while(m.find())
+		{
+			
+			System.out.println(m.group());
+		}
+	}
+}
+
+To find char which is not present in the pattern:
+-------------------------------------------------
+
+Use [^] in the pattern
+
+Eg: [^SKCET] // Except S,K,C,E,T
+
+import java.util.regex.*;
+class main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java.. come lets start Regex";
+		Pattern p=Pattern.compile("[^WIR]");// to find start
+		Matcher m=p.matcher(sentence);
+		while(m.find())
+		{			
+			System.out.println(m.group());
+		}
+	}
+}
+
+[abc]---->Either a or b or c
+
+[^abc]--->Except a, b ,c
+
+[a-z]----->Any lower case alphabe symbol
+
+[A-Z]---->Any Uppercse Symbol
+
+[0-9]-->any digit from 0 to 9
+
+[a-z A-Z]-->any aplphabet symbol
+
+[a-z A-Z 0-9]--->any aplphanumeric symbols
+
+[^a-z A-Z 0-9]---->Except aplha numeric i.e prints special symbols
+
+Predefined characters classes:
+------------------------------
+
+Space & Non-Space:
+------------------
+1) \\s - space 
+2) \\S - Uppercase S for Non space character
+
+import java.util.regex.*;
+class main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java";
+		Pattern p=Pattern.compile("\\s");  
+		Matcher m=p.matcher(sentence);
+		while(m.find())
+		{			
+			System.out.println(m.group()+" "+m.start()+" "+m.end());
+		}
+	}
+}
+
+Digits:
+-------
+//d - digit
+//D - non digit
+import java.util.regex.*;
+class main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java@123";
+		Pattern p=Pattern.compile("\\d");
+		Matcher m=p.matcher(sentence);
+		while(m.find())
+		{			
+			System.out.println(m.group()+" "+m.start()+" "+m.end());
+		}
+	}
+}
+
+
+Digits & Characters:
+--------------------
+//w - to find number and char
+//W - to special char
+import java.util.regex.*;
+class main
+{
+	public static void main(String []n)
+	{
+		String sentence="Welcome to Java@123";
+		Pattern p=Pattern.compile("\\w");
+		Matcher m=p.matcher(sentence);
+		while(m.find())
+		{			
+			System.out.println(m.group()+" "+m.start()+" "+m.end());
+		}
+	}
+}
+
+
+Quantifiers:
+============
+
+Expression	Description
+x?	-> x occurs once or not at all i.e 0 or 1 time. eg: Pattern: a?, String: "abc"
+X*	-> X occurs zero or more times Eg: Pattern: a*, String: "aaabc"
+X+	-> X occurs one or more times Eg: Pattern: a+, String: "aaabc"
+X{n}	-> X occurs exactly n times Eg: a{2}, String: "aabc"
+X{n,}	-> X occurs n or more times Eg: Pattern: a{2,}, String: "aaabc"
+X{n,m}	-> X occurs at least n times but not more than m times Eg: Pattern: a{2,3}, String: "aaabc"
+
+
+Eg:
+
+import java.util.regex.*;
+public class Main
+{
+    public static void main(String []n)
+    {
+        String sentence="a";
+        if(Pattern.matches("ab*",sentence))
+        {
+            System.out.println("Match found");
+        }
+        else {
+            System.out.println("Match not found");
+        }
+    }
+}
+Output: Match found
+
+-------------------------------------------------------------
+
+import java.util.regex.*;
+public class Main
+{
+    public static void main(String []n)
+    {
+        String sentence="a";
+        if(Pattern.matches("ab+",sentence))
+        {
+            System.out.println("Match found");
+        }
+        else {
+            System.out.println("Match not found");
+        }
+    }
+}
+Output: Match not found
+
+
+
+eg:
+
+import java.util.regex.*;
+class main
+{
+    public static void main(String []n)
+    {
+        String sentence="aaaaaaabbbbbbbb";
+        if(Pattern.matches("a*b*",sentence))
+        {
+            System.out.println("Match found");
+        }
+        else {
+            System.out.println("Match not found");
+        }
+    }
+}
+
+Eg:
+
+import java.util.regex.*;
+public class Main
+{
+    public static void main(String []n)
+    {
+        String sentence="cdefghijkl";
+        if(Pattern.matches("a*b*.*",sentence))
+        {
+            System.out.println("Match found");
+        }
+        else {
+            System.out.println("Match not found");
+        }
+    }
+}
+
+Eg: Write regex to find the name ends with Karikalan.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.regex.*;
+class main
+{
+    public static void main(String []n)
+    {
+        String sentence="Aditya Karikalan";
+        if(Pattern.matches("[a-zA-Z]{1,}[\\s]Karikalan",sentence))
+        {
+            System.out.println("Match found");
+        }
+        else {
+            System.out.println("Match not found");
+        }
+    }
+}
+
+
+Write regex to find the mobile number has tendigits.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.regex.*;
+class main
+{
+    public static void main(String []n)
+    {
+        String sentence="9876543210";
+        if(Pattern.matches("[0-9]{10}",sentence))
+        {
+            System.out.println("Match found");
+        }
+        else {
+            System.out.println("Match not found");
+        }
+    }
+}
+
+
+
+
+
+Eg: Write regex to find the Tamilnadu mobile number or not 
+(MN: should starts with 6,7,8,9 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.util.regex.*;
+class main
+{
+    public static void main(String []n)
+    {
+        String sentence="6976543219";
+        if(Pattern.matches("[6-9]{1}[0-9]{9}",sentence))
+        {
+            System.out.println("Tamilnadu Mobile number");
+        }
+        else {
+            System.out.println("Outside Tamilnadu mobile number");
+        }
+    }
+}
+
+
+
+
+
+Write regex for valid mobile number.
+1) should have 10 digits eg: 9087654321(or)
+2) It can have 11 digits but shld starts with 0 Eg:  09087654321 (or)
+3) It can have 12 digits but shld starts with 91 Eg:  91-9087654321 (or)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solution:  (0|91-)?[0-9]{10}
+
+
+Valid mail ID:
+
+import java.util.regex.*;
+class main
+{
+    public static void main(String []n)
+    {
+        String sentence="banu.java@gmail.com";
+        if(Pattern.matches("^[\\w.]+@gmail\\.com$",sentence))
+        {
+            System.out.println("Match found");
+        }
+        else {
+            System.out.println("Match not found");
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

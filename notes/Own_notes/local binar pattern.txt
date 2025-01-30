@@ -1,0 +1,2 @@
+local binar pattern
+ecudien measure algo
