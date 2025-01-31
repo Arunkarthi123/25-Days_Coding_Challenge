@@ -1,0 +1,7 @@
+31 - jan - 2025
+
+# Time Complexity :
+    - O(1) - Constant time .
+    - O(n) - Traversing the whole array .
+    - O(log n) - Binary Search .
+    
