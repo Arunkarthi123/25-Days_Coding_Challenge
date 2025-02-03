@@ -2,6 +2,16 @@
 
 # Time Complexity :
     - O(1) - Constant time .
-    - O(n) - Traversing the whole array .
-    - O(log n) - Binary Search .
-    
+    - O(log n) - Binary Search . [ an algorithm's running time grows proportionally to the logarithm of the input size (n), indicating that as the input size increases, the time needed to process it increases very slowly ]
+    - O(n) - Linear Time Complexity . [  an algorithm's runtime grows directly proportional to the size of its input data ]
+    - O(nlog n) - eg . merge sort , quick sort . [ n algorithm's running time grows proportionally to the input size (n) multiplied by the logarithm of the input size (log n) ]
+    - O(n^2) - The running time of an algorithm grows proportionally to the square of the input size (n) .
+    - O(2^n) - The running time of an algorithm grows proportionally to the square of the input size (n).
+    - 
+# Time and space Trade off :
+    In computer science, a space-time tradeoff is a way of solving a problem or calculation in less time by using more storage space, or by solving a problem in very little space by spending a long time.
+
+# Problems :
+    - Sum of n numbers :
+        - Aproach - 1 :
+            

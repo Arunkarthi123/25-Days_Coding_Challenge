@@ -1,0 +1,3 @@
+31 jan 2025
+
+- Merge sort sorts the 2 different 
