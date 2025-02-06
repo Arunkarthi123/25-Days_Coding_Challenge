@@ -1,0 +1,60 @@
+class Stack
+    {
+        private int top;
+        private int cap;
+        private char[] arr;        
+        public Stack(int n)
+        {
+            this.top = -1;
+            this.cap = n;
+            arr = new char[cap];
+        }
+        private boolean isFull()
+        {
+            return cap == top +1;
+        }
+        public void push(int val)
+        {
+            if(isFull())
+            {
+                System.out.println("Stack is full !!");
+                return ;
+            }
+            arr[++top] = val;
+        }
+        public boolean imEmpty()
+        {
+            return top == -1;
+        }
+        public char pop()
+        {
+            if(imEmpty())
+            {
+                System.out.println("Stack is empty");
+                return -1;
+            }
+            return arr[top--];
+        }
+        public char peek()
+        {
+            if(imEmpty())
+            {
+                System.out.println("Stack is empty");
+                return -1;
+            }
+            return arr[top];
+        }
+        public int size()
+        {
+            return top +1;
+        }
+        public String toString()
+        {
+            String str = "[ ";
+            for(int i =0;i<=top;i++)
+            {
+                str =str + arr[i]+" ";
+            }
+            return str+"]";
+        }
+    }
