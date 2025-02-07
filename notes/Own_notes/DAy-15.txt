@@ -1,0 +1,10 @@
+06-feb-2025
+
+- Output of ` System.out.println(arr); ` is hash code of the array .
+- In java we cannot access the address of an array directly .
+- The time complexity of insertion and deletion in beginning of an array is O(n) .
+- The time complexity of insertion and deletion in beginning of linkedList is O(1) .
+- LinkedList consumes more space than array .
+- Why should the ` next ` datatype be the class name (`Node) ?
+    - this is because the ` next ` stores the hashcode of upcoming nodes . In java hashcode denotes the address .
+- 
