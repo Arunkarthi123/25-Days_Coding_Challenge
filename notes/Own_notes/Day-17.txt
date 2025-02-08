@@ -1,0 +1,10 @@
+08-jan-2025
+
+
+# Sorting Algorithms :
+
+    - Bubble Sort :
+        - Worst time - O(n^2) . 
+        - Best time - O(n) .
+        - By default it does not contains the nature of O(n) complexity .
+        
