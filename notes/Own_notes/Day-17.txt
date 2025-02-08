@@ -2,9 +2,14 @@
 
 
 # Sorting Algorithms :
-
-    - Bubble Sort :
-        - Worst time - O(n^2) . 
-        - Best time - O(n) .
-        - By default it does not contains the nature of O(n) complexity .
-        
+    # Linear Sorting Algorithms :
+        - Bubble Sort :
+            - Worst time - O(n^2) . 
+            - Best time - O(n) .
+            - By default it does not contains the nature of O(n) complexity .
+        - Insertion Sort :
+        - Slection Sort :
+    
+    # Non-Linear Algorithms :
+        - Merge sort :
+            - 
