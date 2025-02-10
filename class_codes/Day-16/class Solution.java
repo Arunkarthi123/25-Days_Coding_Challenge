@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution 
 {
     public int calculate(String s) 
@@ -32,10 +33,10 @@ class Solution
                     int n1 = num.pop();
                     int n2 = s.charAt(++i) - '0';
                     char ch2 = op.pop();
-                    if()
+                    // if()
                 }
             }
-        map.put('+' , )
+        map.put('+' ,1 );
 
         }        
     }

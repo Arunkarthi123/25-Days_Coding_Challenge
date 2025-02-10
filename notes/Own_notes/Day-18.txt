@@ -1,0 +1,18 @@
+Feb-10-2025
+
+# Tree Data Structures :
+    - It is used to store the heiraarchical data .
+    - The base unit that stores the data is known as nodes(n) .
+    - The connection between two nodes are termed as edges(e) .
+    - In tree the maximum number of edges in n nodes are (n - 1) .
+    - Root node is the node that does not have parent node .
+    - The node which has a child node then it is a parent node .
+    - The node which has a parent node then it is child node .
+    - The nodes which shares the same parent then the nodes are termed as sibling nodes .
+    - The node which has 0 child node then it is leave nodes .
+    - The node which has both child and parent nodes then it is internal nodes.
+    - The degree of a node is the number of its child node .
+    - The height of a node is the maximum number of edges to reach any of its leave node .
+    - The height of all leave nodes are 0 .
+    - The maximum number of edges to reach the leave node from the root of the tree is the height of the tree .
+    - The maximum number of edges from root to the particular node is the depth of the node .
