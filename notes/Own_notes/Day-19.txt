@@ -1,0 +1,9 @@
+Feb-12-2025
+
+# Binary Tree :
+    - Full Binary Tree 
+    - Strictly Binary Tree 
+    - Complete Binary Tree 
+    - Skewed Binary Tree
+    - Extended Binary Tree
+    - Expression Binary Tree 

@@ -2,7 +2,10 @@ public class BST1
 {
     public static void main(String[] args)
     {
-
+        Btree tree = new Btree();
+        tree.root = tree.insert(tree.root, 25);
+        tree.root = tree.insert(tree.root, 25);
+        tree.root = tree.insert(tree.root, 25);
     }
 }   
 class Node
