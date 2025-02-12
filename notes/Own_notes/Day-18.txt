@@ -16,3 +16,12 @@ Feb-10-2025
     - The height of all leave nodes are 0 .
     - The maximum number of edges to reach the leave node from the root of the tree is the height of the tree .
     - The maximum number of edges from root to the particular node is the depth of the node .
+    # Types of Tree Data Structures :
+        - Binary tree .
+        - Ternary tree .
+        - N-ary tree .
+    # Types of Traversal :
+        - Pre-order .
+        - Post-order .
+        - In-order .
+        - 
