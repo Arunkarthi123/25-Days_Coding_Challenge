@@ -1,9 +1,17 @@
 Feb-12-2025
 
 # Binary Tree :
-    - Full Binary Tree 
-    - Strictly Binary Tree 
-    - Complete Binary Tree 
-    - Skewed Binary Tree
-    - Extended Binary Tree
-    - Expression Binary Tree 
+    - Maximum number of height of a binary tree is (N - 1).
+    # Types :
+        - Full Binary Tree 
+        - Strictly Binary Tree 
+        - Complete Binary Tree 
+        - Skewed Binary Tree
+            - BST is not efficient for Skewed binary tree .
+        - Extended Binary Tree
+        - Expression Binary Tree 
+        - AVL tree 
+            - Ordered height balanced tree.
+            - If left height - right height is equal to [ -1 , 0 , 1 ].
+            -                                                         
+    
