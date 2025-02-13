@@ -1,0 +1,21 @@
+13 - Feb - 2025 
+
+# Graph :
+    - Graph is a set of vertex and edges .
+    - It is non linear data structure .
+    - It is not heiraarchical order .
+    - It consists of vertices (nodes ) and edges .
+    - A vertex is also known as nodes is a point or a object in the Graph and edges are used to connect two nodes .
+    - Applications :
+        - Social Networks .
+        - Internet .
+        - Biology .
+        - Maps and navigation .
+    - Types of Graph :
+        - Without weight and Without direction .
+        - Without weight and With direction .
+        - With weight and Without direction .
+        - With weight and With direction
+    - Graph properties :
+        - weighted Graph : It is a Graph where the edges have values . The weight value of an edge can represent things like distance , capacity , time .
+        - connected Graph : 
