@@ -18,4 +18,7 @@
         - With weight and With direction
     - Graph properties :
         - weighted Graph : It is a Graph where the edges have values . The weight value of an edge can represent things like distance , capacity , time .
-        - connected Graph : 
+        - connected Graph :
+    - If a graph is unweighted then the values to represent the connection is ( 0 , 1) .
+    - If a graph is weighted then the values to represent the connection is (0 , weight of the node ).
+    - 
