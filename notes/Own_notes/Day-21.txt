@@ -1,0 +1,8 @@
+14 - Feb - 2025
+
+# Min - Heap :
+    - The parent node should be minimum than its child nodes .
+    - 
+# Max - Heap :
+    - The parent node should be maximum than its child node .
+    - 
