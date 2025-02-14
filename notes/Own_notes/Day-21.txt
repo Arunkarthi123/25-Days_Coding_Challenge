@@ -1,8 +1,18 @@
 14 - Feb - 2025
 
+# Tree in Array :
+    - To get the index of the parent of a node is  [ (ind(node) - 1) / 2 ] .
+    - To get the index of the left child of a node is [ (ind(node) * 2 ) + 1] .
+    - To get the index of the right child of a node is [ (ind(node) * 2) + 2] .
+# Complete binary Tree :
+    - All levels should be completely filled except the leaf level . 
+    - The last level should be filled from left to right .
 # Min - Heap :
     - The parent node should be minimum than its child nodes .
+    - It is a complete binary tree .
+    - If heap is stroed in array then traversing from left to right and there is a empty space then it is not a heap data structure .
     - 
 # Max - Heap :
     - The parent node should be maximum than its child node .
+    - It is a complete binary tree . 
     - 
