@@ -1,0 +1,16 @@
+Feb - 15 - 2025
+
+# Algorithms :
+    - Brute-force approach .
+    - Greedy approach .
+    - Backtracking approach .
+    - Dynamic programming . 
+
+# Backtracking :
+    - N - Queens problem :
+        - N value always be 2 power n . 
+            - Two approach :
+                - Row Based approach in which each row contains one Queen .
+                - column Based approach in which each column contains one Queen .
+            - Row based :
+                
