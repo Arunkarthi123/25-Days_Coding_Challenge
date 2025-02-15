@@ -13,4 +13,11 @@ Feb - 15 - 2025
                 - Row Based approach in which each row contains one Queen .
                 - column Based approach in which each column contains one Queen .
             - Row based :
-                
+# Doubt :
+    - Why pre and post increment is not advisible for recursion parameter ?
+    
+# C - programming:
+    - Why 2's compliement is used in negative binary value over 1's compliement ?
+        - Because , if we use 1's compliement then there will exist positive zero and negative zero .
+    - Binary representation of float values and decimal values .
+    - 
