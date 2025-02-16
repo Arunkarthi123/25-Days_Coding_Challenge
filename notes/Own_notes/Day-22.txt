@@ -20,4 +20,5 @@ Feb - 15 - 2025
     - Why 2's compliement is used in negative binary value over 1's compliement ?
         - Because , if we use 1's compliement then there will exist positive zero and negative zero .
     - Binary representation of float values and decimal values .
+    - 0 is considered as false aand other integer values are considered as true .
     - 
