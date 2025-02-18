@@ -8,7 +8,6 @@ public class Dp3
 		dp[i][0]=1;
 		for(int i=1;i<=sum;i++)
 		dp[0][i]=0;
-		
 		for(int i=1;i<=coins.length;i++)
 		{
 		    for(int j=1;j<=sum;j++)
