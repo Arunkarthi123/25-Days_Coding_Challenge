@@ -25,3 +25,7 @@ Feb - 19 - 2025
             - Quadratic 
             - Double hashing .
                 It is recommended when loud factor > 0.75 .
+
+# DBMS :
+    - DataBase Management System .
+    - 
