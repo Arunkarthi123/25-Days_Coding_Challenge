@@ -28,4 +28,9 @@ Feb - 19 - 2025
 
 # DBMS :
     - DataBase Management System .
-    - 
+    - Cloud :
+        - SAAS
+        - PAAS
+        - IAAS
+    - ERP - Enterprise Resource Planning .
+        - 
