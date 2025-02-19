@@ -1,0 +1,27 @@
+Feb - 19 - 2025
+
+# Last Day of 25 day Training :
+    
+# Today's Agenda :
+    - Hashing 
+    - Jump searching 
+    - Interpolation searching
+
+# Jump searching :
+    - Find sqrt of the length of array .
+    - Segment the array in window size of the sqrt .
+    - Check the last element of each window with the search value , If it is low than or equal to the last value then break otherwise continue .
+
+# Interpolation Search :
+    - As like binary Search , only formula changed . 
+    - h , l , p , val 
+    - p = l + {( h - l) / arr[h] - arr[l]} * ( x - arr[ l])
+
+# Hashing :
+    - Collision handling :
+        - Open Addressing :
+        - Close Addressing :
+            - Linear 
+            - Quadratic 
+            - Double hashing .
+                It is recommended when loud factor > 0.75 .
